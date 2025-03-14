@@ -1,4 +1,4 @@
-GCC_FLAGS = -Wextra -Werror -Wall -Wno-gnu-folding-constant -g
+GCC_FLAGS = -Wextra -Werror -Wall -Wno-gnu-folding-constant -g -Wp,-U_FORTIFY_SOURCE
 
 all:
 	gcc $(GCC_FLAGS) libcoro.c corobus.c test.c ../utils/unit.c \
